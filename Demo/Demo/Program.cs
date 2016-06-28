@@ -13,7 +13,7 @@ namespace Demo
 			var center = new Point(0, 0);
 			IShape circle = new Circle(center, 5);
 
-			circle.Color = Color.Red; // Circle.Color.set
+			circle.Color = Color.Red; // Shape.Color.set
 
 			circle.Print(Console.Out); // Circle.Print
 
@@ -21,7 +21,7 @@ namespace Demo
 
 			square.Print(Console.Out); // Square.Print
 
-			IShape squareOrCircle = square.Center.X > circle.Center.X ? square : circle;
+			IShape squareOrCircle = square.Center.X > circle.Center.X ? square : circle; // Rectangle.Center.get, Circle.Center.get
 
 			squareOrCircle.Print(Console.Out); // Square.Print or Circle.Print
 
