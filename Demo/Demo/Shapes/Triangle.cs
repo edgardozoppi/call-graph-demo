@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo
+namespace Demo.Shapes
 {
 	class Triangle : Shape
 	{
