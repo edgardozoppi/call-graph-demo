@@ -14,6 +14,7 @@ namespace Demo
 		{
 			Shapes();
 			Chat();
+			Collections();
 		}
 
 		private static void Shapes()
