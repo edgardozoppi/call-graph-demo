@@ -1,8 +1,8 @@
 ﻿using Demo.Chat;
+using Demo.Collections;
 using Demo.Shapes;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -52,6 +52,32 @@ namespace Demo
 			Task<MessageResult> task = client.SendAsync($"Hello from client {client.Id}!");
 			MessageResult result3 = await task;
 			result3.ToString(); // ErrorMessageResult.ToString
+		}
+
+		private static void Collections()
+		{
+			IEnumerable<Element> input = new HashSet<Element>();
+			IEnumerable<Element> output = input.Where(e => e.Data != null);
+
+			Console.WriteLine(output.Count());
+
+			Func<Element, object> dataSelector = e => e.Data;
+			var data = output.Select(dataSelector);
+
+			Console.WriteLine(data.Count());
+
+			Func<Element, string> stringSelector = GetSelector();
+			var strings = output.Select(stringSelector);
+
+			Console.WriteLine(strings.Count());
+		}
+
+		private static Func<Element, string> GetSelector()
+		{
+			return e =>
+			{
+				return e.ToString();
+			};
 		}
 	}
 }

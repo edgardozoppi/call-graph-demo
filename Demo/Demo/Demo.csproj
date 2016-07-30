@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Chat\Client.cs" />
     <Compile Include="Chat\Server.cs" />
+    <Compile Include="Collections\Element.cs" />
+    <Compile Include="Collections\Extensions.cs" />
     <Compile Include="Shapes\Square.cs" />
     <Compile Include="Shapes\Triangle.cs" />
     <Compile Include="Shapes\Rectangle.cs" />
