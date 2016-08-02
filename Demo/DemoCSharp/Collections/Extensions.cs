@@ -29,8 +29,8 @@ namespace Demo.Collections
 
 			foreach (var elem in self)
 			{
-				var r = action(elem);
-				result.Add(r);
+				var re = action(elem);
+				result.Add(re);
 			}
 
 			return result;
