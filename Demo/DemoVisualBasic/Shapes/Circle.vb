@@ -15,7 +15,7 @@ Namespace Demo.Shapes
 			Me.Radius = radius
 		End Sub
 
-		Public ReadOnly Property Radius As Integer
+		Public Property Radius As Integer
 
 		Public Overrides ReadOnly Property Center() As Point
 			Get

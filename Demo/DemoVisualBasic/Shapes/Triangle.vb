@@ -14,9 +14,9 @@ Namespace Demo.Shapes
 			Me.Point3 = p3
 		End Sub
 
-		Public ReadOnly Property Point1 As Point
-		Public ReadOnly Property Point2 As Point
-		Public ReadOnly Property Point3 As Point
+		Public Property Point1 As Point
+		Public Property Point2 As Point
+		Public Property Point3 As Point
 
 		Public Overrides ReadOnly Property Center() As Point
 			Get

@@ -14,7 +14,7 @@ Namespace Demo.Chat
 			Me.Id = Guid.NewGuid()
 		End Sub
 
-		Public ReadOnly Property Id As Guid
+		Public Property Id As Guid
 
 		Public Async Function ConnectAsync(server As Server) As Task(Of MessageResult)
 			Dim result = Await server.AcceptAsync(Me)
