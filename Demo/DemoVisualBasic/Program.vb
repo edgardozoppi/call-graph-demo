@@ -8,7 +8,7 @@ Imports System.Threading.Tasks
 
 Namespace Demo
 	Class Program
-		Private Shared Sub Main(args As String())
+		Shared Sub Main(args As String())
 			Shapes()
 			Chat()
 			Collections()
